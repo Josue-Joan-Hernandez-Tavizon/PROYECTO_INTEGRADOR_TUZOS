@@ -1,0 +1,10 @@
+{
+  "proyecto": "Tuzos Drilling",
+  "modulo_probado": "registro.py",
+  "cobertura_lineas": 0,
+  "cobertura_ramas": 0,
+  "total_pruebas": 0,
+  "pruebas_exitosas": 0,
+  "estado_ci": "pending",
+  "fecha_ultima_ejecucion": null
+}
