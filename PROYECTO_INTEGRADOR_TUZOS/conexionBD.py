@@ -10,6 +10,7 @@ try:
     )
     cursor = conexion.cursor(buffered=True)
 except Error as e:
+    print("")#hola uwu
     print(f"En este momento no es posible comunicarse con el sistema: {e}")
     conexion = None
     cursor = None
