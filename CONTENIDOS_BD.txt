@@ -1,0 +1,70 @@
+1. USUARIOS
+id
+usuario
+email
+contraseña
+
+2. JUGADORES
+ID_jugador
+Nombre
+Apellidos
+CURP
+Categoria (FK → Categoria.ID_Categoria)
+Numero_jugador
+Inscripción
+
+3. PROFESORES
+Id_Profesores
+Nombre
+Apellidos
+Categoria (FK → Categoria.ID_Categoria)
+
+4. CATEGORIA
+ID_Categoria
+Nombre
+Secundaria
+Quinto y sexto
+Tercer y cuarto año
+Primer y segundo
+Preescolar y menores
+
+5. HORARIO
+ID_Horario
+Ocupación (Partido, Entrenamiento, Partido_Torneo)
+Hora
+Día
+Disponibilidad
+
+6. ENTRENAMIENTO
+Id_Entrenamiento
+Día
+Hora
+Profesor (FK → Profesores.Id_Profesores)
+Categoria (FK → Categoria.ID_Categoria)
+
+7. PARTIDOS
+Id_Partidos
+Día
+Hora
+Equipo_Local
+Equipo_Visitante
+Profesor (FK → Profesores.Id_Profesores)
+Lugar
+Categoria (FK → Categoria.ID_Categoria)
+
+8. TORNEO
+Id_Torneo
+Nombre_torneo
+Categoria (FK → Categoria.ID_Categoria)
+Cantidad_Equipos
+Duración
+Fecha_Inicial
+Fecha_Termino
+
+9. PARTIDO_TORNEO
+Id_ParTor
+Nombre_torneo (FK → Torneo.Id_Torneo)
+Equipo_Local
+Equipo_Visitante
+Horario (FK → Horario.ID_Horario)
+Lugar
